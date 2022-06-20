@@ -116,6 +116,7 @@ contract GTBank {
         );
         balances[msg.sender] -= amount;
         balances[recipient] += amount;
+        CBContract.creditTx(depositor, recipient, amount);
         emit Transfer(msg.sender, recipient, amount); //solhint-disable-line indent, no-unused-vars
         return true;
     }
