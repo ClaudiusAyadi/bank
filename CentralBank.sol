@@ -5,6 +5,7 @@ contract CentralBank {
     /*----------------------------------------------------------*|
     |*  # STRUCT, ARRAY $ FUNCTIONS                             *|
     |*----------------------------------------------------------*/
+    
     /**
      * @title TxDetails
      * @dev a struct holding all the required details of a transaction
